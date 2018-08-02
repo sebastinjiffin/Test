@@ -1,0 +1,11 @@
+﻿{
+  "Capasity": 4,
+  "UploadFreq": 10000,
+  "ProcessFreq": 12000,
+  "Logging": {
+    "EnableTrace": false,
+    "LogLevel": {
+      "Microsoft": "Information"
+    }
+  }
+}

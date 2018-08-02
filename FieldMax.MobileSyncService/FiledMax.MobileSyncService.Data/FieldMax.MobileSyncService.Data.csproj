@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5034E3A-8F80-4A7B-9871-B68AEFF42727}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FieldMax.Webservices.Data</RootNamespace>
+    <AssemblyName>FieldMax.Webservices.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\FieldMax.Webservices\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Fieldmax.Webservices\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\FieldMax.Webservices\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infocean.DataAccessHelper, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Infocean.DataAccessHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\ApplicationSettingsBO.cs" />
+    <Compile Include="BO\AppointmentBO.cs" />
+    <Compile Include="BO\AssetRequestBO.cs" />
+    <Compile Include="BO\BeatPlanDeviationBO.cs" />
+    <Compile Include="BO\BTLActivityBO.cs" />
+    <Compile Include="BO\CancelledOrdersBO.cs" />
+    <Compile Include="BO\CashSettlementBO.cs" />
+    <Compile Include="BO\DoctorContributionBO.cs" />
+    <Compile Include="BO\DoctorVisitTimeBO.cs" />
+    <Compile Include="BO\EditCustomerBO.cs" />
+    <Compile Include="BO\EditPlanBO.cs" />
+    <Compile Include="BO\BOBase.cs" />
+    <Compile Include="BO\CheckDbBO.cs" />
+    <Compile Include="BO\ChequeRemittanceBO.cs" />
+    <Compile Include="BO\EmailAlertBO.cs" />
+    <Compile Include="BO\FeaturePoolBO.cs" />
+    <Compile Include="BO\GenarateDbBO.cs" />
+    <Compile Include="BO\JointWorkShopInAndOutBO.cs" />
+    <Compile Include="BO\JourneyCycleBO.cs" />
+    <Compile Include="BO\MaterialTransactionBO.cs" />
+    <Compile Include="BO\MobileControlsBO.cs" />
+    <Compile Include="BO\CompetitorBO.cs" />
+    <Compile Include="BO\ComplaintEntryBO.cs" />
+    <Compile Include="BO\CollectionBO.cs" />
+    <Compile Include="BO\DeliveryBO.cs" />
+    <Compile Include="BO\DeviceTokenBO.cs" />
+    <Compile Include="BO\DynamicReportBO.cs" />
+    <Compile Include="BO\EmailBO.cs" />
+    <Compile Include="BO\EnquiryBO.cs" />
+    <Compile Include="BO\FollowupBO.cs" />
+    <Compile Include="BO\ImeiBO.cs" />
+    <Compile Include="BO\IncentiveDashboardBO.cs" />
+    <Compile Include="BO\MyActivityBO.cs" />
+    <Compile Include="BO\NewCustomerOrderBO.cs" />
+    <Compile Include="BO\LeaveBO.cs" />
+    <Compile Include="BO\MobileFeedbackBO.cs" />
+    <Compile Include="BO\MobilePunchingBO.cs" />
+    <Compile Include="BO\ParameterSettingsBO.cs" />
+    <Compile Include="BO\PaymentBO.cs" />
+    <Compile Include="BO\PhotoCaptureBO.cs" />
+    <Compile Include="BO\PjpBO.cs" />
+    <Compile Include="BO\PopBO.cs" />
+    <Compile Include="BO\PriceRangeBO.cs" />
+    <Compile Include="BO\PrinterNameBO.cs" />
+    <Compile Include="BO\ProcessStatusBO.cs" />
+    <Compile Include="BO\ProductDetailedBO.cs" />
+    <Compile Include="BO\ProductTransactionBO.cs" />
+    <Compile Include="BO\PromotionalActivitiesBO.cs" />
+    <Compile Include="BO\QuatationDetailsBO.cs" />
+    <Compile Include="BO\ReceiptNoBO.cs" />
+    <Compile Include="BO\RecentOrderBO.cs" />
+    <Compile Include="BO\RemittanceBO.cs" />
+    <Compile Include="BO\SalesmanTargetBO.cs" />
+    <Compile Include="BO\SalesPromotionBO.cs" />
+    <Compile Include="BO\SampleBO.cs" />
+    <Compile Include="BO\ShopInAndOutBO.cs" />
+    <Compile Include="BO\ShopLocationBO.cs" />
+    <Compile Include="BO\SignatureBO.cs" />
+    <Compile Include="BO\SMSConfigBO.cs" />
+    <Compile Include="BO\SqliteBackUpBo.cs" />
+    <Compile Include="BO\StockAgingBO.cs" />
+    <Compile Include="BO\StockBO.cs" />
+    <Compile Include="BO\StockReconcilationBO.cs" />
+    <Compile Include="BO\TargetVsAchievementBO.cs" />
+    <Compile Include="BO\TodaysPlanBO.cs" />
+    <Compile Include="BO\TourPlanBO.cs" />
+    <Compile Include="BO\TransactionResultBO.cs" />
+    <Compile Include="BO\VersionLogBO.cs" />
+    <Compile Include="BO\ExpenseBO.cs" />
+    <Compile Include="BO\NewCustomerBO.cs" />
+    <Compile Include="BO\SalesReturnBO.cs" />
+    <Compile Include="BO\OrderBO.cs" />
+    <Compile Include="BO\AlertsBO.cs" />
+    <Compile Include="BO\ShopBO.cs" />
+    <Compile Include="BO\WorkingAreaBO.cs" />
+    <Compile Include="BO\WorkWithBO.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="BO\DBCredentialBO.cs" />
+    <Compile Include="DAO\ApplicationSettingsDAO.cs" />
+    <Compile Include="DAO\AppointmentDAO.cs" />
+    <Compile Include="DAO\AssetRequestDAO.cs" />
+    <Compile Include="DAO\BeatPlanDeviationDAO.cs" />
+    <Compile Include="DAO\BTLActivityDAO.cs" />
+    <Compile Include="DAO\CancelledOrdersDAO.cs" />
+    <Compile Include="DAO\CashSettlementDAO.cs" />
+    <Compile Include="DAO\CheckDbDAO.cs" />
+    <Compile Include="DAO\ChequeRemittanceDAO.cs" />
+    <Compile Include="DAO\DoctorContributionDAO.cs" />
+    <Compile Include="DAO\DoctorVisitTimeDAO.cs" />
+    <Compile Include="DAO\EditCustomerDAO.cs" />
+    <Compile Include="DAO\EditPlanDAO.cs" />
+    <Compile Include="DAO\EmailAlertDAO.cs" />
+    <Compile Include="DAO\FeaturePoolDAO.cs" />
+    <Compile Include="DAO\GenarateDbDAO.cs" />
+    <Compile Include="DAO\JointWorkShopInAndOutDAO.cs" />
+    <Compile Include="DAO\JourneyCycleDAO.cs" />
+    <Compile Include="DAO\MaterialTransactionDAO.cs" />
+    <Compile Include="DAO\MobileControlsDAO.cs" />
+    <Compile Include="DAO\CompetitorDAO.cs" />
+    <Compile Include="DAO\ComplaintEntryDAO.cs" />
+    <Compile Include="DAO\CollectionDAO.cs" />
+    <Compile Include="DAO\DeliveryDAO.cs" />
+    <Compile Include="DAO\DeviceTokenDAO.cs" />
+    <Compile Include="DAO\DynamicReportDAO.cs" />
+    <Compile Include="DAO\EmailDAO.cs" />
+    <Compile Include="DAO\EnquiryDAO.cs" />
+    <Compile Include="DAO\FollowupDAO.cs" />
+    <Compile Include="DAO\ImeiDAO.cs" />
+    <Compile Include="DAO\IncentiveDashboardDAO.cs" />
+    <Compile Include="DAO\MyActivityDAO.cs" />
+    <Compile Include="DAO\NewCustomerOrderDAO.cs" />
+    <Compile Include="DAO\LeaveDAO.cs" />
+    <Compile Include="DAO\MobileFeedbackDAO.cs" />
+    <Compile Include="DAO\MobilePunchingDAO.cs" />
+    <Compile Include="DAO\ParameterSettingsDAO.cs" />
+    <Compile Include="DAO\PaymentDAO.cs" />
+    <Compile Include="DAO\PhotoCaptureDAO.cs" />
+    <Compile Include="DAO\PjpDAO.cs" />
+    <Compile Include="DAO\PopDAO.cs" />
+    <Compile Include="DAO\PriceRangeDAO.cs" />
+    <Compile Include="DAO\PrinterNameDAO.cs" />
+    <Compile Include="DAO\ProcessStatusDAO.cs" />
+    <Compile Include="DAO\ProductDetailedDAO.cs" />
+    <Compile Include="DAO\ProductTransactionDAO.cs" />
+    <Compile Include="DAO\PromotionalActivitiesDAO.cs" />
+    <Compile Include="DAO\QuatationDetailsDAO.cs" />
+    <Compile Include="DAO\ReceiptNoDAO.cs" />
+    <Compile Include="DAO\RecentOrderDAO.cs" />
+    <Compile Include="DAO\RemittanceDAO.cs" />
+    <Compile Include="DAO\SalesmanTargetDAO.cs" />
+    <Compile Include="DAO\SalesPromotionDAO.cs" />
+    <Compile Include="DAO\SampleDAO.cs" />
+    <Compile Include="DAO\ShopInAndOutDAO.cs" />
+    <Compile Include="DAO\ShopLocationDAO.cs" />
+    <Compile Include="DAO\SignatureDAO.cs" />
+    <Compile Include="DAO\SMSconfigDAO.cs" />
+    <Compile Include="DAO\SqliteBackUpDAO.cs" />
+    <Compile Include="DAO\StockAgingDAO.cs" />
+    <Compile Include="DAO\StockDAO.cs" />
+    <Compile Include="DAO\StockReconcilationDAO.cs" />
+    <Compile Include="DAO\TargetVsAchievementDAO.cs" />
+    <Compile Include="DAO\TodaysPlanDAO.cs" />
+    <Compile Include="DAO\TourPlanDAO.cs" />
+    <Compile Include="DAO\TransactionResultDAO.cs" />
+    <Compile Include="DAO\VersionLogDAO.cs" />
+    <Compile Include="DAO\ExpenseDAO.cs" />
+    <Compile Include="DAO\NewCustomerDAO.cs" />
+    <Compile Include="DAO\SalesReturnDAO.cs" />
+    <Compile Include="DAO\OrderDAO.cs" />
+    <Compile Include="DAO\AlertsDAO.cs" />
+    <Compile Include="DAO\ShopDAO.cs" />
+    <Compile Include="DAO\DAOBase.cs" />
+    <Compile Include="DAO\DBCredentialDAO.cs" />
+    <Compile Include="DAO\WorkingAreaDAO.cs" />
+    <Compile Include="DAO\WorkWithDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
