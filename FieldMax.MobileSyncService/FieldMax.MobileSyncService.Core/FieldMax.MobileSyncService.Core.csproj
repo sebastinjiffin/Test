@@ -34,6 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FieldMax.Webservices.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\FieldMax.Webservices.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="FieldMax.Webservices.DbAccess">
+      <HintPath>..\lib\FieldMax.Webservices.DbAccess.dll</HintPath>
+    </Reference>
     <Reference Include="Infocean.DataAccessHelper">
       <HintPath>..\lib\Infocean.DataAccessHelper.dll</HintPath>
     </Reference>
@@ -180,16 +187,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FieldMax.MobileSyncService.DbAccess\FieldMax.MobileSyncService.DbAccess.csproj">
-      <Project>{EF7FB7BB-7027-43FD-AF8A-1153A1DD9A78}</Project>
-      <Name>FieldMax.MobileSyncService.DbAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FiledMax.MobileSyncService.Data\FieldMax.MobileSyncService.Data.csproj">
-      <Project>{D5034E3A-8F80-4A7B-9871-B68AEFF42727}</Project>
-      <Name>FieldMax.MobileSyncService.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,7 +1,7 @@
 ﻿using FieldMax.AsyncService.Core;
-using FieldMax.MobileSyncService.Data;
-using FieldMax.MobileSyncService.Data.BO;
-using FieldMax.MobileSyncService.DbAccess;
+using FieldMax.Webservices.Data;
+using FieldMax.Webservices.Data.BO;
+using FieldMax.Webservices.DbAccess;
 using Infocean.DataAccessHelper;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
